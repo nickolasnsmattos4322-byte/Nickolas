@@ -1,18 +1,19 @@
 import type { Metadata, Viewport } from 'next'
-import { Nunito, Nunito_Sans } from 'next/font/google'
+import { Baloo_2, Nunito } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Toaster } from 'sonner'
 import './globals.css'
 
+const baloo = Baloo_2({ 
+  subsets: ["latin"],
+  variable: '--font-baloo',
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '800'],
+})
+
 const nunito = Nunito({ 
   subsets: ["latin"],
   variable: '--font-nunito',
-  display: 'swap',
-})
-
-const nunitoSans = Nunito_Sans({ 
-  subsets: ["latin"],
-  variable: '--font-nunito-sans',
   display: 'swap',
 })
 
@@ -34,7 +35,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: '#4ade80',
+  themeColor: '#FF6B9D',
 }
 
 export default function RootLayout({
@@ -44,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="bg-background">
-      <body className={`${nunito.variable} ${nunitoSans.variable} font-sans antialiased`}>
+      <body className={`${baloo.variable} ${nunito.variable} font-sans antialiased`}>
         {children}
         <Toaster position="top-center" richColors />
         {process.env.NODE_ENV === 'production' && <Analytics />}

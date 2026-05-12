@@ -11,8 +11,48 @@ export interface Profile {
   desenhos_gratis_usados: number
   atividades_gratis_usadas: number
   idade_preferida: string | null
+  estrelas: number
+  nivel: number
+  xp: number
+  avatar: string
   created_at: string
   updated_at: string
+}
+
+export interface Achievement {
+  id: string
+  nome: string
+  descricao: string | null
+  icone: string
+  tipo: 'colorir' | 'atividade' | 'sequencia' | 'especial'
+  requisito: number
+  xp_reward: number
+  estrelas_reward: number
+  created_at: string
+}
+
+export interface UserAchievement {
+  id: string
+  user_id: string
+  achievement_id: string
+  unlocked_at: string
+  achievement?: Achievement
+}
+
+export interface PrintableActivity {
+  id: string
+  titulo: string
+  descricao: string | null
+  tipo: 'ligar_pontos' | 'labirinto' | 'caca_palavras' | 'alfabeto' | 'trace_letras' | 'trace_numeros' | 'formas' | 'sete_erros' | 'recorte_cole' | 'sequencias'
+  category_id: string | null
+  pdf_url: string | null
+  thumbnail_url: string | null
+  idade_minima: number
+  idade_maxima: number
+  is_premium: boolean
+  downloads: number
+  ordem: number
+  created_at: string
 }
 
 export interface Category {
@@ -68,6 +108,33 @@ export const FREE_LIMITS = {
   desenhos: 3,
   atividades: 5,
 }
+
+// XP needed for each level
+export const XP_PER_LEVEL = 100
+
+// Calculate level from XP
+export function calculateLevel(xp: number): number {
+  return Math.floor(xp / XP_PER_LEVEL) + 1
+}
+
+// Calculate XP progress within current level
+export function calculateLevelProgress(xp: number): number {
+  return xp % XP_PER_LEVEL
+}
+
+// Avatar options
+export const AVATARS = [
+  { id: 'dinosaur', name: 'Dino', emoji: '🦖' },
+  { id: 'unicorn', name: 'Unicornio', emoji: '🦄' },
+  { id: 'butterfly', name: 'Borboleta', emoji: '🦋' },
+  { id: 'rabbit', name: 'Coelho', emoji: '🐰' },
+  { id: 'cat', name: 'Gatinho', emoji: '🐱' },
+  { id: 'dog', name: 'Cachorro', emoji: '🐶' },
+  { id: 'lion', name: 'Leao', emoji: '🦁' },
+  { id: 'panda', name: 'Panda', emoji: '🐼' },
+  { id: 'star', name: 'Estrela', emoji: '⭐' },
+  { id: 'rocket', name: 'Foguete', emoji: '🚀' },
+]
 
 export const SUBSCRIPTION_PLANS: SubscriptionPlan[] = [
   {

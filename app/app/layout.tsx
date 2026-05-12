@@ -22,11 +22,11 @@ export default async function AppLayout({
     .single()
 
   return (
-    <div className="flex min-h-screen bg-background">
+    <div className="flex min-h-screen bg-[#FFF9F0]">
       <AppSidebar profile={profile} />
-      <div className="flex flex-1 flex-col md:pl-64">
+      <div className="flex flex-1 flex-col md:pl-72">
         <AppHeader profile={profile} user={user} />
-        <main className="flex-1 p-4 md:p-6">
+        <main className="flex-1 p-4 md:p-8">
           {children}
         </main>
       </div>
