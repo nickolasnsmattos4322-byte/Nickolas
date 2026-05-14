@@ -22,11 +22,29 @@ export const metadata: Metadata = {
   description: 'Plataforma educativa para criancas de 3 a 10 anos com desenhos para colorir, atividades de alfabetizacao, matematica e ingles. Aprenda brincando!',
   keywords: ['colorir', 'atividades infantis', 'educacao infantil', 'alfabetizacao', 'matematica para criancas', 'ingles para criancas'],
   authors: [{ name: 'Colorir e Aprender' }],
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Colorir e Aprender',
+  },
+  formatDetection: {
+    telephone: false,
+  },
   openGraph: {
     title: 'Colorir e Aprender - Atividades Educativas para Criancas',
     description: 'Plataforma educativa para criancas de 3 a 10 anos com desenhos para colorir, atividades de alfabetizacao, matematica e ingles.',
     type: 'website',
     locale: 'pt_BR',
+  },
+  icons: {
+    icon: [
+      { url: '/icons/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icons/icon-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/icons/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+    ],
   },
 }
 
