@@ -55,6 +55,51 @@ export interface PrintableActivity {
   created_at: string
 }
 
+// VideoAula for "Aprenda a Desenhar" section
+export interface VideoAula {
+  id: string
+  titulo: string
+  descricao: string | null
+  video_url: string | null
+  thumbnail_url: string | null
+  duracao_segundos: number
+  passos: VideoAulaStep[]
+  pdf_url: string | null
+  is_premium: boolean
+  is_featured: boolean
+  category_id: string | null
+  dificuldade: 'facil' | 'medio' | 'dificil'
+  ordem: number
+  views: number
+  created_at: string
+  category?: Category
+}
+
+export interface VideoAulaStep {
+  ordem: number
+  titulo: string
+  descricao: string
+  imagem_url?: string
+}
+
+export interface UserVideoProgress {
+  id: string
+  user_id: string
+  video_id: string
+  completed: boolean
+  watched_seconds: number
+  last_watched: string
+  certificate_earned: boolean
+}
+
+// Admin email that gets premium automatically
+export const ADMIN_EMAIL = 'nickolasmattosns@gmail.com'
+
+// Check if user is admin
+export function isAdmin(email: string | null | undefined): boolean {
+  return email === ADMIN_EMAIL
+}
+
 export interface Category {
   id: string
   nome: string

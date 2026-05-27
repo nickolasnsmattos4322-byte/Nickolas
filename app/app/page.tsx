@@ -18,7 +18,10 @@ import {
   Heart,
   Sparkles,
   Zap,
-  Play
+  Play,
+  Video,
+  Award,
+  Flame
 } from 'lucide-react'
 import { FREE_LIMITS, Activity, calculateLevel, calculateLevelProgress, XP_PER_LEVEL } from '@/lib/types'
 import { ActivityCard } from '@/components/app/activity-card'
@@ -32,6 +35,15 @@ const categories = [
     bgColor: 'bg-[#FFE4EC]',
     description: '500+ desenhos',
     emoji: '🎨'
+  },
+  { 
+    name: 'Aprenda a Desenhar', 
+    href: '/app/videoaulas', 
+    icon: Video, 
+    color: 'from-[#4D96FF] to-[#A66CFF]',
+    bgColor: 'bg-[#E8F0FF]',
+    description: 'Videoaulas passo a passo',
+    emoji: '🎬'
   },
   { 
     name: 'Alfabeto', 
@@ -59,15 +71,6 @@ const categories = [
     bgColor: 'bg-[#FFF8E1]',
     description: 'Hello English!',
     emoji: '🌍'
-  },
-  { 
-    name: 'Jogos', 
-    href: '/app/jogos', 
-    icon: Gamepad2, 
-    color: 'from-[#A66CFF] to-[#FF6B9D]',
-    bgColor: 'bg-[#F3E8FF]',
-    description: 'Games educativos',
-    emoji: '🎮'
   },
   { 
     name: 'Imprimir', 

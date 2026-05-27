@@ -20,7 +20,8 @@ import {
   Trophy,
   Gamepad2,
   Sparkles,
-  Menu
+  Menu,
+  Video
 } from 'lucide-react'
 import { Profile, calculateLevel, calculateLevelProgress, XP_PER_LEVEL, AVATARS } from '@/lib/types'
 import { useState } from 'react'
@@ -28,6 +29,7 @@ import { useState } from 'react'
 const navigation = [
   { name: 'Inicio', href: '/app', icon: Home, color: 'from-[#FF6B9D] to-[#FF9F43]' },
   { name: 'Colorir', href: '/app/colorir', icon: Palette, color: 'from-[#FF6B9D] to-[#A66CFF]' },
+  { name: 'Aprenda a Desenhar', href: '/app/videoaulas', icon: Video, color: 'from-[#4D96FF] to-[#A66CFF]' },
   { name: 'Alfabeto', href: '/app/alfabetizacao', icon: BookOpen, color: 'from-[#6BCB77] to-[#1DD1A1]' },
   { name: 'Numeros', href: '/app/matematica', icon: Calculator, color: 'from-[#4D96FF] to-[#A66CFF]' },
   { name: 'Ingles', href: '/app/ingles', icon: Globe, color: 'from-[#FFD93D] to-[#FF9F43]' },
