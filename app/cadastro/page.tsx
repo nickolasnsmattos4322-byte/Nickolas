@@ -75,16 +75,26 @@ export default function SignUpPage() {
   async function handleGoogleSignup() {
     setLoadingGoogle(true)
     
+    // Use production URL if available, otherwise use current origin
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin
+    const redirectTo = `${siteUrl}/auth/callback`
+    
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo,
+        queryParams: {
+          access_type: 'offline',
+          prompt: 'consent',
+        },
       },
     })
 
     if (error) {
       toast.error('Erro ao entrar com Google', {
-        description: error.message,
+        description: error.message === 'Provider not found' 
+          ? 'Login com Google nao esta configurado. Use email e senha.'
+          : error.message,
       })
       setLoadingGoogle(false)
     }

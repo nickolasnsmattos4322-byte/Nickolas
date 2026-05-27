@@ -21,12 +21,19 @@ export default function RecuperarSenhaPage() {
 
     const supabase = createClient()
     
+    // Use production URL if available, otherwise use current origin
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin
+    
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${window.location.origin}/auth/callback?next=/redefinir-senha`,
+      redirectTo: `${siteUrl}/auth/callback?next=/redefinir-senha`,
     })
 
     if (error) {
-      toast.error('Erro ao enviar email de recuperacao')
+      toast.error('Erro ao enviar email', {
+        description: error.message === 'For security purposes, you can only request this once every 60 seconds'
+          ? 'Por seguranca, aguarde 60 segundos para solicitar novamente.'
+          : error.message,
+      })
       setIsLoading(false)
       return
     }
