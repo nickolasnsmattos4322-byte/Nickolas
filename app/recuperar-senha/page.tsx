@@ -21,11 +21,8 @@ export default function RecuperarSenhaPage() {
 
     const supabase = createClient()
     
-    // Use production URL if available, otherwise use current origin
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin
-    
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: `${siteUrl}/auth/callback?next=/redefinir-senha`,
+      redirectTo: `${window.location.origin}/auth/callback?next=/redefinir-senha`,
     })
 
     if (error) {

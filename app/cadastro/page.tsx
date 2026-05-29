@@ -75,18 +75,10 @@ export default function SignUpPage() {
   async function handleGoogleSignup() {
     setLoadingGoogle(true)
     
-    // Use production URL if available, otherwise use current origin
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || window.location.origin
-    const redirectTo = `${siteUrl}/auth/callback`
-    
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo,
-        queryParams: {
-          access_type: 'offline',
-          prompt: 'consent',
-        },
+        redirectTo: `${window.location.origin}/auth/callback`,
       },
     })
 
