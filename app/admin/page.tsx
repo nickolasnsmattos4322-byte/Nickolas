@@ -25,14 +25,14 @@ export default async function AdminDashboard() {
 
   const stats = [
     {
-      title: 'Total de Usuarios',
+      title: 'Total de Usuários',
       value: totalUsers || 0,
       icon: Users,
       color: 'text-blue-500',
       bgColor: 'bg-blue-500/10',
     },
     {
-      title: 'Usuarios Premium',
+      title: 'Usuários Premium',
       value: premiumUsers || 0,
       icon: Crown,
       color: 'text-yellow-500',
@@ -87,8 +87,8 @@ export default async function AdminDashboard() {
       {/* Recent Users */}
       <Card>
         <CardHeader>
-          <CardTitle>Usuarios Recentes</CardTitle>
-          <CardDescription>Ultimos usuarios cadastrados</CardDescription>
+          <CardTitle>Usuários Recentes</CardTitle>
+          <CardDescription>Últimos usuários cadastrados</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">

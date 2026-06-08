@@ -15,7 +15,7 @@ export async function createCheckoutSession(productId: string) {
 
   const product = PRODUCTS.find(p => p.id === productId)
   if (!product) {
-    throw new Error('Produto nao encontrado')
+    throw new Error('Produto não encontrado')
   }
 
   // Get or create Stripe customer

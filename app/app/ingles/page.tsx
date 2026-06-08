@@ -45,10 +45,10 @@ export default async function InglesPage() {
           <Globe className="h-10 w-10 text-white" />
         </div>
         <h1 className="text-4xl font-bold text-[#2D1B4E] mb-2">
-          Ingles
+          Inglês
         </h1>
         <p className="text-lg text-[#6B5B7A] max-w-xl mx-auto">
-          Learn English with fun activities! Aprenda ingles brincando!
+          Learn English with fun activities! Aprenda inglês brincando!
         </p>
       </div>
 
@@ -72,7 +72,7 @@ export default async function InglesPage() {
         <Card className="p-4 bg-gradient-to-br from-[#4D96FF] to-[#5F27CD] text-white rounded-2xl hover:scale-105 transition-all cursor-pointer">
           <Music className="h-8 w-8 mb-2" />
           <h3 className="font-bold">Songs</h3>
-          <p className="text-sm text-white/80">Musicas</p>
+          <p className="text-sm text-white/80">Músicas</p>
         </Card>
       </div>
 

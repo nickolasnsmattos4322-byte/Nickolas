@@ -35,7 +35,7 @@ const printableTypes = [
   },
   { 
     id: 'caca_palavras', 
-    name: 'Caca-Palavras', 
+    name: 'Caça-Palavras', 
     emoji: '🔍',
     color: 'from-[#4D96FF] to-[#A66CFF]', 
     bg: 'bg-[#E8F0FF]',
@@ -49,7 +49,7 @@ const printableTypes = [
   },
   { 
     id: 'trace_numeros', 
-    name: 'Trace os Numeros', 
+    name: 'Trace os Números', 
     emoji: '🔢',
     color: 'from-[#A66CFF] to-[#FF6B9D]', 
     bg: 'bg-[#F3E8FF]',
@@ -66,13 +66,13 @@ const printableTypes = [
 // Sample printables for demo
 const samplePrintables = [
   { id: '1', titulo: 'Dinossauro - Ligar Pontos', tipo: 'ligar_pontos', emoji: '🦖', is_premium: false },
-  { id: '2', titulo: 'Unicornio - Ligar Pontos', tipo: 'ligar_pontos', emoji: '🦄', is_premium: false },
+  { id: '2', titulo: 'Unicórnio - Ligar Pontos', tipo: 'ligar_pontos', emoji: '🦄', is_premium: false },
   { id: '3', titulo: 'Labirinto da Floresta', tipo: 'labirinto', emoji: '🌲', is_premium: false },
   { id: '4', titulo: 'Labirinto Espacial', tipo: 'labirinto', emoji: '🚀', is_premium: true },
-  { id: '5', titulo: 'Caca-Palavras: Animais', tipo: 'caca_palavras', emoji: '🐾', is_premium: false },
-  { id: '6', titulo: 'Caca-Palavras: Frutas', tipo: 'caca_palavras', emoji: '🍎', is_premium: true },
+  { id: '5', titulo: 'Caça-Palavras: Animais', tipo: 'caca_palavras', emoji: '🐾', is_premium: false },
+  { id: '6', titulo: 'Caça-Palavras: Frutas', tipo: 'caca_palavras', emoji: '🍎', is_premium: true },
   { id: '7', titulo: 'Trace a Letra A', tipo: 'trace_letras', emoji: '🅰️', is_premium: false },
-  { id: '8', titulo: 'Trace o Numero 1', tipo: 'trace_numeros', emoji: '1️⃣', is_premium: false },
+  { id: '8', titulo: 'Trace o Número 1', tipo: 'trace_numeros', emoji: '1️⃣', is_premium: false },
 ]
 
 export default async function ImprimirPage() {
@@ -154,7 +154,7 @@ export default async function ImprimirPage() {
         <div className="mb-4 flex items-center justify-between">
           <h2 className="text-xl font-bold text-foreground flex items-center gap-2">
             <Star className="h-5 w-5 fill-[#FFD93D] text-[#FFD93D]" />
-            Atividades Disponiveis
+            Atividades Disponíveis
           </h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -231,7 +231,7 @@ export default async function ImprimirPage() {
             <div className="flex-1">
               <h3 className="text-xl font-bold text-foreground mb-2">Como usar as atividades</h3>
               <p className="text-muted-foreground mb-4">
-                Clique no botao de download para baixar o PDF. Imprima em papel sulfite A4 e entregue para a crianca colorir, resolver ou completar!
+                Clique no botão de download para baixar o PDF. Imprima em papel sulfite A4 e entregue para a criança colorir, resolver ou completar!
               </p>
               <div className="flex flex-wrap gap-3">
                 <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#E8F8EA] text-[#6BCB77] text-sm font-medium">
@@ -244,7 +244,7 @@ export default async function ImprimirPage() {
                 </span>
                 <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#FFE4EC] text-[#FF6B9D] text-sm font-medium">
                   <Sparkles className="h-4 w-4" />
-                  Diversao garantida
+                  Diversão garantida
                 </span>
               </div>
             </div>
@@ -264,7 +264,7 @@ export default async function ImprimirPage() {
               <div className="flex-1 text-white">
                 <h3 className="text-2xl font-extrabold mb-2">Desbloqueie todas as atividades!</h3>
                 <p className="text-white/90 mb-4">
-                  Com o Premium voce tem acesso ilimitado a centenas de atividades para imprimir. Novos conteudos toda semana!
+                  Com o Premium você tem acesso ilimitado a centenas de atividades para imprimir. Novos conteúdos toda semana!
                 </p>
                 <Button 
                   className="bg-white text-[#FF9F43] hover:bg-white/90 font-bold rounded-xl shadow-lg"

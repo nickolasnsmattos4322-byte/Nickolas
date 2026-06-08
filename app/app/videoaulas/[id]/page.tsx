@@ -28,7 +28,7 @@ import {
 const videoData = {
   id: '1',
   titulo: 'Como Desenhar um Dinossauro',
-  descricao: 'Aprenda a desenhar um dinossauro T-Rex super fofo passo a passo! Nesta aula voce vai aprender tecnicas simples para criar seu proprio dinossauro.',
+  descricao: 'Aprenda a desenhar um dinossauro T-Rex super fofo passo a passo! Nesta aula você vai aprender técnicas simples para criar seu próprio dinossauro.',
   video_url: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   duracao_segundos: 300,
   dificuldade: 'facil',
@@ -39,26 +39,26 @@ const videoData = {
   passos: [
     {
       ordem: 1,
-      titulo: 'Desenhe a cabeca',
-      descricao: 'Comece desenhando um circulo grande para a cabeca do dinossauro.',
+      titulo: 'Desenhe a cabeça',
+      descricao: 'Comece desenhando um círculo grande para a cabeça do dinossauro.',
       emoji: '⭕'
     },
     {
       ordem: 2,
       titulo: 'Adicione o corpo',
-      descricao: 'Desenhe uma forma oval grande conectada a cabeca.',
+      descricao: 'Desenhe uma forma oval grande conectada a cabeça.',
       emoji: '🥚'
     },
     {
       ordem: 3,
       titulo: 'Desenhe as pernas',
-      descricao: 'Adicione duas pernas grossas com pes grandes.',
+      descricao: 'Adicione duas pernas grossas com pés grandes.',
       emoji: '🦵'
     },
     {
       ordem: 4,
       titulo: 'Adicione os bracinhos',
-      descricao: 'Desenhe dois bracos pequenos e fofos.',
+      descricao: 'Desenhe dois braços pequenos e fofos.',
       emoji: '💪'
     },
     {
@@ -78,9 +78,9 @@ const videoData = {
 
 function DifficultyBadge({ level }: { level: string }) {
   const config = {
-    facil: { label: 'Facil', color: 'bg-[#6BCB77] text-white' },
-    medio: { label: 'Medio', color: 'bg-[#FFD93D] text-[#2D1B4E]' },
-    dificil: { label: 'Dificil', color: 'bg-[#FF6B9D] text-white' },
+    facil: { label: 'Fácil', color: 'bg-[#6BCB77] text-white' },
+    medio: { label: 'Médio', color: 'bg-[#FFD93D] text-[#2D1B4E]' },
+    dificil: { label: 'Difícil', color: 'bg-[#FF6B9D] text-white' },
   }
   const { label, color } = config[level as keyof typeof config] || config.facil
   return <Badge className={`${color} font-bold`}>{label}</Badge>
@@ -151,7 +151,7 @@ export default function VideoAulaDetailPage() {
                 </span>
                 <span className="text-muted-foreground flex items-center gap-1">
                   <Star className="h-4 w-4 fill-[#FFD93D] text-[#FFD93D]" />
-                  {videoData.views} visualizacoes
+                  {videoData.views} visualizações
                 </span>
               </div>
               <h1 className="text-2xl md:text-3xl font-extrabold text-foreground mb-3">
@@ -190,7 +190,7 @@ export default function VideoAulaDetailPage() {
                   Passo a Passo
                 </h2>
                 <span className="text-sm text-muted-foreground">
-                  {completedSteps.length}/{videoData.passos.length} concluidos
+                  {completedSteps.length}/{videoData.passos.length} concluídos
                 </span>
               </div>
               <div className="space-y-4">
@@ -223,7 +223,7 @@ export default function VideoAulaDetailPage() {
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-xs font-bold text-muted-foreground">PASSO {passo.ordem}</span>
                           {isCompleted && (
-                            <Badge className="bg-[#6BCB77] text-white text-xs">Concluido</Badge>
+                            <Badge className="bg-[#6BCB77] text-white text-xs">Concluído</Badge>
                           )}
                         </div>
                         <h3 className="font-bold text-foreground">{passo.titulo}</h3>
@@ -249,13 +249,13 @@ export default function VideoAulaDetailPage() {
                 <div>
                   <h3 className="font-bold text-foreground">Seu Progresso</h3>
                   <p className="text-sm text-muted-foreground">
-                    {isComplete ? 'Parabens! Aula concluida!' : 'Continue aprendendo!'}
+                    {isComplete ? 'Parabéns! Aula concluída!' : 'Continue aprendendo!'}
                   </p>
                 </div>
               </div>
               <Progress value={progress} className="h-4 bg-white mb-2" />
               <p className="text-sm text-muted-foreground text-center">
-                {Math.round(progress)}% concluido
+                {Math.round(progress)}% concluído
               </p>
               {isComplete && (
                 <Button className="w-full mt-4 bg-gradient-to-r from-[#FFD93D] to-[#FF9F43] text-[#2D1B4E] font-bold">
@@ -296,8 +296,8 @@ export default function VideoAulaDetailPage() {
               <h3 className="font-bold text-foreground mb-4">Aulas Relacionadas</h3>
               <div className="space-y-3">
                 {[
-                  { emoji: '🦁', title: 'Como desenhar um Leao', color: 'bg-[#FFD93D]' },
-                  { emoji: '🦄', title: 'Como desenhar um Unicornio', color: 'bg-[#A66CFF]' },
+                  { emoji: '🦁', title: 'Como desenhar um Leão', color: 'bg-[#FFD93D]' },
+                  { emoji: '🦄', title: 'Como desenhar um Unicórnio', color: 'bg-[#A66CFF]' },
                   { emoji: '🐶', title: 'Como desenhar um Cachorro', color: 'bg-[#FF9F43]' },
                 ].map((lesson, i) => (
                   <Link key={i} href="/app/videoaulas" className="flex items-center gap-3 p-2 rounded-xl hover:bg-muted transition-colors">

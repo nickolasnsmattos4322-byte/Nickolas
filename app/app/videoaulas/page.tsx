@@ -38,8 +38,8 @@ const videoLessons = [
   },
   {
     id: '2',
-    titulo: 'Como Desenhar um Unicornio',
-    descricao: 'Crie um unicornio magico com brilho e arco-iris!',
+    titulo: 'Como Desenhar um Unicórnio',
+    descricao: 'Crie um unicórnio mágico com brilho e arco-íris!',
     thumbnail_url: null,
     duracao_segundos: 420,
     dificuldade: 'medio',
@@ -51,8 +51,8 @@ const videoLessons = [
   },
   {
     id: '3',
-    titulo: 'Como Desenhar um Leao',
-    descricao: 'Desenhe o rei da selva com juba incrivel!',
+    titulo: 'Como Desenhar um Leão',
+    descricao: 'Desenhe o rei da selva com juba incrível!',
     thumbnail_url: null,
     duracao_segundos: 360,
     dificuldade: 'medio',
@@ -104,7 +104,7 @@ const videoLessons = [
   {
     id: '7',
     titulo: 'Como Desenhar um Gato',
-    descricao: 'Crie um gatinho adoravel com olhos brilhantes!',
+    descricao: 'Crie um gatinho adorável com olhos brilhantes!',
     thumbnail_url: null,
     duracao_segundos: 280,
     dificuldade: 'facil',
@@ -116,8 +116,8 @@ const videoLessons = [
   },
   {
     id: '8',
-    titulo: 'Como Desenhar um Dragao',
-    descricao: 'Desenhe um dragao magico com asas e fogo!',
+    titulo: 'Como Desenhar um Dragão',
+    descricao: 'Desenhe um dragão mágico com asas e fogo!',
     thumbnail_url: null,
     duracao_segundos: 600,
     dificuldade: 'dificil',
@@ -137,9 +137,9 @@ function formatDuration(seconds: number): string {
 
 function DifficultyBadge({ level }: { level: string }) {
   const config = {
-    facil: { label: 'Facil', color: 'bg-[#6BCB77] text-white' },
-    medio: { label: 'Medio', color: 'bg-[#FFD93D] text-[#2D1B4E]' },
-    dificil: { label: 'Dificil', color: 'bg-[#FF6B9D] text-white' },
+    facil: { label: 'Fácil', color: 'bg-[#6BCB77] text-white' },
+    medio: { label: 'Médio', color: 'bg-[#FFD93D] text-[#2D1B4E]' },
+    dificil: { label: 'Difícil', color: 'bg-[#FF6B9D] text-white' },
   }
   const { label, color } = config[level as keyof typeof config] || config.facil
   return <Badge className={`${color} font-bold`}>{label}</Badge>
@@ -174,7 +174,7 @@ export default function VideoaulasPage({ isPremium = false }: VideoaulaPageProps
                     Aprenda a Desenhar!
                   </h1>
                   <p className="text-white/90 text-lg">
-                    Videoaulas passo a passo para criar desenhos incriveis
+                    Videoaulas passo a passo para criar desenhos incríveis
                   </p>
                 </div>
               </div>
@@ -268,9 +268,9 @@ export default function VideoaulasPage({ isPremium = false }: VideoaulaPageProps
           <div className="flex items-center gap-2 p-1 rounded-xl bg-muted">
             {[
               { key: 'todos', label: 'Todas' },
-              { key: 'facil', label: 'Facil' },
-              { key: 'medio', label: 'Medio' },
-              { key: 'dificil', label: 'Dificil' },
+              { key: 'facil', label: 'Fácil' },
+              { key: 'medio', label: 'Médio' },
+              { key: 'dificil', label: 'Difícil' },
             ].map((tab) => (
               <button
                 key={tab.key}

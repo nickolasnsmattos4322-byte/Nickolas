@@ -90,7 +90,7 @@ export default function NovaAtividade() {
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
-              <Label htmlFor="titulo">Titulo</Label>
+              <Label htmlFor="titulo">Título</Label>
               <Input
                 id="titulo"
                 value={form.titulo}
@@ -100,7 +100,7 @@ export default function NovaAtividade() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="descricao">Descricao</Label>
+              <Label htmlFor="descricao">Descrição</Label>
               <Textarea
                 id="descricao"
                 value={form.descricao}
@@ -121,9 +121,9 @@ export default function NovaAtividade() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="colorir">Colorir</SelectItem>
-                    <SelectItem value="alfabetizacao">Alfabetizacao</SelectItem>
-                    <SelectItem value="matematica">Matematica</SelectItem>
-                    <SelectItem value="ingles">Ingles</SelectItem>
+                    <SelectItem value="alfabetizacao">Alfabetização</SelectItem>
+                    <SelectItem value="matematica">Matemática</SelectItem>
+                    <SelectItem value="ingles">Inglês</SelectItem>
                     <SelectItem value="jogo">Jogo</SelectItem>
                     <SelectItem value="imprimir">Imprimir</SelectItem>
                   </SelectContent>
@@ -152,7 +152,7 @@ export default function NovaAtividade() {
 
             <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-2">
-                <Label htmlFor="idade_minima">Idade Minima</Label>
+                <Label htmlFor="idade_minima">Idade Mínima</Label>
                 <Input
                   id="idade_minima"
                   type="number"
@@ -163,7 +163,7 @@ export default function NovaAtividade() {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="idade_maxima">Idade Maxima</Label>
+                <Label htmlFor="idade_maxima">Idade Máxima</Label>
                 <Input
                   id="idade_maxima"
                   type="number"

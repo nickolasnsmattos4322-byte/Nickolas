@@ -45,7 +45,7 @@ export default async function AlfabetizacaoPage() {
           <BookOpen className="h-10 w-10 text-white" />
         </div>
         <h1 className="text-4xl font-bold text-[#2D1B4E] mb-2">
-          Alfabetizacao
+          Alfabetização
         </h1>
         <p className="text-lg text-[#6B5B7A] max-w-xl mx-auto">
           Aprenda as letras, forme palavras e desenvolva a leitura brincando!
@@ -71,7 +71,7 @@ export default async function AlfabetizacaoPage() {
         </Card>
         <Card className="p-4 bg-gradient-to-br from-[#FFD93D] to-[#FF9F43] text-white rounded-2xl hover:scale-105 transition-all cursor-pointer">
           <Sparkles className="h-8 w-8 mb-2" />
-          <h3 className="font-bold">Silabas</h3>
+          <h3 className="font-bold">Sílabas</h3>
           <p className="text-sm text-white/80">BA-BE-BI-BO-BU</p>
         </Card>
       </div>
@@ -114,7 +114,7 @@ export default async function AlfabetizacaoPage() {
               </div>
               <h3 className="text-xl font-bold text-[#2D1B4E] mb-2">Em breve!</h3>
               <p className="text-[#6B5B7A]">
-                Novas atividades de alfabetizacao chegando em breve!
+                Novas atividades de alfabetização chegando em breve!
               </p>
             </Card>
           )}
@@ -144,7 +144,7 @@ export default async function AlfabetizacaoPage() {
             Desbloqueie Todas as Atividades!
           </h3>
           <p className="text-white/90 mb-4 max-w-lg mx-auto">
-            Assine o plano Premium e tenha acesso a centenas de atividades de alfabetizacao!
+            Assine o plano Premium e tenha acesso a centenas de atividades de alfabetização!
           </p>
           <Button 
             asChild

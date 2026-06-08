@@ -18,9 +18,9 @@ const nunito = Nunito({
 })
 
 export const metadata: Metadata = {
-  title: 'Colorir e Aprender - Atividades Educativas para Criancas',
-  description: 'Plataforma educativa para criancas de 3 a 10 anos com desenhos para colorir, atividades de alfabetizacao, matematica e ingles. Aprenda brincando!',
-  keywords: ['colorir', 'atividades infantis', 'educacao infantil', 'alfabetizacao', 'matematica para criancas', 'ingles para criancas'],
+  title: 'Colorir e Aprender - Atividades Educativas para Crianças',
+  description: 'Plataforma educativa para crianças de 3 a 10 anos com desenhos para colorir, atividades de alfabetização, matemática e inglês. Aprenda brincando!',
+  keywords: ['colorir', 'atividades infantis', 'educação infantil', 'alfabetização', 'matemática para crianças', 'inglês para crianças'],
   authors: [{ name: 'Colorir e Aprender' }],
   manifest: '/manifest.json',
   appleWebApp: {
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'Colorir e Aprender - Atividades Educativas para Criancas',
-    description: 'Plataforma educativa para criancas de 3 a 10 anos com desenhos para colorir, atividades de alfabetizacao, matematica e ingles.',
+    title: 'Colorir e Aprender - Atividades Educativas para Crianças',
+    description: 'Plataforma educativa para crianças de 3 a 10 anos com desenhos para colorir, atividades de alfabetização, matemática e inglês.',
     type: 'website',
     locale: 'pt_BR',
   },

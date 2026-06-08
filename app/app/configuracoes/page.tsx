@@ -6,7 +6,7 @@ import { User, CreditCard, Bell, Shield, HelpCircle } from 'lucide-react'
 const settings = [
   {
     title: 'Perfil',
-    description: 'Gerencie suas informacoes pessoais',
+    description: 'Gerencie suas informações pessoais',
     icon: User,
     href: '/app/perfil',
   },
@@ -17,15 +17,15 @@ const settings = [
     href: '/app/premium',
   },
   {
-    title: 'Notificacoes',
-    description: 'Configure suas preferencias de notificacao',
+    title: 'Notificações',
+    description: 'Configure suas preferências de notificação',
     icon: Bell,
     href: '#',
     disabled: true,
   },
   {
     title: 'Privacidade',
-    description: 'Configuracoes de privacidade e dados',
+    description: 'Configurações de privacidade e dados',
     icon: Shield,
     href: '/privacidade',
   },
@@ -41,7 +41,7 @@ const settings = [
 export default function ConfiguracoesPage() {
   return (
     <div className="mx-auto max-w-2xl space-y-6">
-      <h1 className="text-2xl font-bold">Configuracoes</h1>
+      <h1 className="text-2xl font-bold">Configurações</h1>
 
       <div className="space-y-4">
         {settings.map((setting) => (

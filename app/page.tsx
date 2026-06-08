@@ -80,40 +80,40 @@ function FloatingShapes() {
 }
 
 const categories = [
-  { icon: Palette, name: 'Colorir', color: 'bg-[#FF6B9D]', desc: 'Desenhos lindos', count: '500+' },
-  { icon: BookOpen, name: 'Alfabeto', color: 'bg-[#6BCB77]', desc: 'Letras e palavras', count: '200+' },
-  { icon: Calculator, name: 'Numeros', color: 'bg-[#4D96FF]', desc: 'Matematica divertida', count: '150+' },
-  { icon: Globe, name: 'Ingles', color: 'bg-[#FFD93D] text-[#2D1B4E]', desc: 'Aprenda brincando', count: '100+' },
-  { icon: Gamepad2, name: 'Jogos', color: 'bg-[#A66CFF]', desc: 'Games educativos', count: '50+' },
-  { icon: Printer, name: 'Imprimir', color: 'bg-[#FF9F43]', desc: 'Atividades em PDF', count: '300+' },
+  { icon: Palette, name: 'Colorir', slug: 'colorir', color: 'bg-[#FF6B9D]', desc: 'Desenhos lindos', count: '500+' },
+  { icon: BookOpen, name: 'Alfabeto', slug: 'alfabetizacao', color: 'bg-[#6BCB77]', desc: 'Letras e palavras', count: '200+' },
+  { icon: Calculator, name: 'Números', slug: 'matematica', color: 'bg-[#4D96FF]', desc: 'Matemática divertida', count: '150+' },
+  { icon: Globe, name: 'Inglês', slug: 'ingles', color: 'bg-[#FFD93D] text-[#2D1B4E]', desc: 'Aprenda brincando', count: '100+' },
+  { icon: Gamepad2, name: 'Jogos', slug: 'jogos', color: 'bg-[#A66CFF]', desc: 'Games educativos', count: '50+' },
+  { icon: Printer, name: 'Imprimir', slug: 'imprimir', color: 'bg-[#FF9F43]', desc: 'Atividades em PDF', count: '300+' },
 ]
 
 const features = [
   {
     icon: Palette,
-    title: 'Desenhos Magicos',
-    description: 'Mais de 500 desenhos lindos de animais, dinossauros, unicornios, princesas e muito mais!',
+    title: 'Desenhos Mágicos',
+    description: 'Mais de 500 desenhos lindos de animais, dinossauros, unicórnios, princesas e muito mais!',
     color: 'from-[#FF6B9D] to-[#FF9F43]',
     bgColor: 'bg-[#FFE4EC]',
   },
   {
     icon: BookOpen,
     title: 'Aprenda o ABC',
-    description: 'Atividades divertidas para aprender o alfabeto, formar palavras e comecar a ler!',
+    description: 'Atividades divertidas para aprender o alfabeto, formar palavras e começar a ler!',
     color: 'from-[#6BCB77] to-[#1DD1A1]',
     bgColor: 'bg-[#E8F8EA]',
   },
   {
     icon: Calculator,
-    title: 'Numeros Divertidos',
-    description: 'Conte, some e brinque com os numeros de um jeito super legal e colorido!',
+    title: 'Números Divertidos',
+    description: 'Conte, some e brinque com os números de um jeito super legal e colorido!',
     color: 'from-[#4D96FF] to-[#A66CFF]',
     bgColor: 'bg-[#E8F0FF]',
   },
   {
     icon: Globe,
     title: 'Hello English!',
-    description: 'Aprenda ingles com cores, animais e palavras do dia a dia cantando e brincando!',
+    description: 'Aprenda inglês com cores, animais e palavras do dia a dia cantando e brincando!',
     color: 'from-[#FFD93D] to-[#FF9F43]',
     bgColor: 'bg-[#FFF8E1]',
   },
@@ -151,7 +151,7 @@ export default function LandingPage() {
               <span className="text-2xl font-bold bg-gradient-to-r from-[#FF6B9D] to-[#A66CFF] bg-clip-text text-transparent">
                 Colorir e Aprender
               </span>
-              <p className="text-xs text-muted-foreground">Diversao que ensina!</p>
+              <p className="text-xs text-muted-foreground">Diversão que ensina!</p>
             </div>
           </Link>
           <nav className="hidden items-center gap-8 lg:flex">
@@ -174,7 +174,7 @@ export default function LandingPage() {
               asChild
             >
               <Link href="/cadastro">
-                Comecar Gratis!
+                Começar Grátis!
               </Link>
             </Button>
           </div>
@@ -189,7 +189,7 @@ export default function LandingPage() {
             <div className="text-center lg:text-left">
               <div className={`mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#FFE4EC] to-[#FFF0F5] px-5 py-2.5 text-sm font-bold text-[#FF6B9D] border-2 border-[#FFE4EC] ${mounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-500' : ''}`}>
                 <Star className="h-5 w-5 fill-[#FFD93D] text-[#FFD93D]" />
-                Para criancas de 3 a 10 anos
+                Para crianças de 3 a 10 anos
                 <Sparkles className="h-5 w-5" />
               </div>
               <h1 className={`mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight ${mounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100' : ''}`}>
@@ -200,8 +200,8 @@ export default function LandingPage() {
                 </span>
               </h1>
               <p className={`mb-8 text-lg md:text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0 ${mounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-500 delay-200' : ''}`}>
-                Centenas de desenhos para colorir, jogos educativos, atividades de alfabetizacao, matematica e ingles. 
-                <span className="font-bold text-[#6BCB77]"> Tudo GRATIS!</span>
+                Centenas de desenhos para colorir, jogos educativos, atividades de alfabetização, matemática e inglês. 
+                <span className="font-bold text-[#6BCB77]"> Tudo GRÁTIS!</span>
               </p>
               <div className={`flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 ${mounted ? 'animate-in fade-in slide-in-from-bottom-4 duration-500 delay-300' : ''}`}>
                 <Button 
@@ -211,7 +211,7 @@ export default function LandingPage() {
                 >
                   <Link href="/cadastro">
                     <Play className="mr-2 h-6 w-6 fill-white" />
-                    Comecar a Brincar!
+                    Começar a Brincar!
                   </Link>
                 </Button>
                 <Button 
@@ -241,7 +241,7 @@ export default function LandingPage() {
                     ))}
                   </div>
                   <p className="text-sm text-muted-foreground font-medium">
-                    <span className="font-bold text-foreground">10.000+</span> criancas felizes
+                    <span className="font-bold text-foreground">10.000+</span> crianças felizes
                   </p>
                 </div>
               </div>
@@ -259,7 +259,7 @@ export default function LandingPage() {
                       { color: '#FF6B9D', icon: '🦋', label: 'Borboleta' },
                       { color: '#6BCB77', icon: '🦖', label: 'Dinossauro' },
                       { color: '#4D96FF', icon: '🚀', label: 'Foguete' },
-                      { color: '#FFD93D', icon: '🌈', label: 'Arco-iris' },
+                      { color: '#FFD93D', icon: '🌈', label: 'Arco-íris' },
                     ].map((item, i) => (
                       <div 
                         key={i}
@@ -298,16 +298,16 @@ export default function LandingPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
               <span className="bg-gradient-to-r from-[#FF6B9D] to-[#A66CFF] bg-clip-text text-transparent">
-                O que voce quer fazer hoje?
+                O que você quer fazer hoje?
               </span>
             </h2>
-            <p className="text-lg text-muted-foreground">Escolha uma categoria e comece a diversao!</p>
+            <p className="text-lg text-muted-foreground">Escolha uma categoria e comece a diversão!</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {categories.map((cat) => (
               <Link 
                 key={cat.name} 
-                href={`/app/${cat.name.toLowerCase().replace('á', 'a')}`}
+                href={`/app/${cat.slug}`}
                 className="group"
               >
                 <Card className="border-3 border-transparent hover:border-[#FFE4EC] transition-all duration-300 hover:shadow-xl hover:-translate-y-2 overflow-hidden">
@@ -344,7 +344,7 @@ export default function LandingPage() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Atividades desenvolvidas por especialistas em educacao infantil para aprender brincando.
+              Atividades desenvolvidas por especialistas em educação infantil para aprender brincando.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -393,7 +393,7 @@ export default function LandingPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold mb-4">
               Comece{' '}
               <span className="bg-gradient-to-r from-[#FFD93D] to-[#FF9F43] bg-clip-text text-transparent">
-                gratis
+                grátis
               </span>
               {' '}hoje!
             </h2>
@@ -429,7 +429,7 @@ export default function LandingPage() {
                   <div className="mb-6">
                     {plan.priceMonthly === 0 ? (
                       <div>
-                        <span className="text-5xl font-extrabold bg-gradient-to-r from-[#6BCB77] to-[#1DD1A1] bg-clip-text text-transparent">Gratis</span>
+                        <span className="text-5xl font-extrabold bg-gradient-to-r from-[#6BCB77] to-[#1DD1A1] bg-clip-text text-transparent">Grátis</span>
                         <p className="mt-2 text-sm text-muted-foreground">Para sempre!</p>
                       </div>
                     ) : (
@@ -466,7 +466,7 @@ export default function LandingPage() {
                     asChild
                   >
                     <Link href="/cadastro">
-                      {index === 0 ? 'Comecar Gratis!' : 'Assinar Premium'}
+                      {index === 0 ? 'Começar Grátis!' : 'Assinar Premium'}
                     </Link>
                   </Button>
                 </CardContent>
@@ -487,10 +487,10 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 text-center relative z-10">
           <DinoMascot className="w-24 h-24 mx-auto mb-6" />
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
-            Vamos comecar a brincadeira?
+            Vamos começar a brincadeira?
           </h2>
           <p className="mx-auto mb-8 max-w-xl text-lg text-white/90">
-            Junte-se a mais de 10.000 criancas que ja estao aprendendo e se divertindo!
+            Junte-se a mais de 10.000 crianças que já estão aprendendo e se divertindo!
           </p>
           <Button 
             size="lg" 
@@ -499,11 +499,11 @@ export default function LandingPage() {
           >
             <Link href="/cadastro">
               <Play className="mr-2 h-6 w-6 fill-[#FF6B9D]" />
-              Criar Conta Gratis!
+              Criar Conta Grátis!
             </Link>
           </Button>
           <p className="mt-4 text-white/70 text-sm">
-            Sem cartao de credito. Cancele quando quiser.
+            Sem cartão de crédito. Cancele quando quiser.
           </p>
         </div>
       </section>
@@ -520,7 +520,7 @@ export default function LandingPage() {
                 <span className="font-bold text-lg bg-gradient-to-r from-[#FF6B9D] to-[#A66CFF] bg-clip-text text-transparent">
                   Colorir e Aprender
                 </span>
-                <p className="text-xs text-muted-foreground">Diversao que ensina!</p>
+                <p className="text-xs text-muted-foreground">Diversão que ensina!</p>
               </div>
             </div>
             <nav className="flex flex-wrap justify-center gap-6">

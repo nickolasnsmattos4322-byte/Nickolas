@@ -111,8 +111,8 @@ export default function PerfilPage() {
             <div className="mb-2 rounded-full bg-[#A66CFF]/20 p-3">
               <Trophy className="h-6 w-6 text-[#A66CFF]" />
             </div>
-            <p className="text-2xl font-bold text-[#2D1B4E]">Nivel {profile?.nivel || 1}</p>
-            <p className="text-xs text-[#6B5B7A]">Seu nivel</p>
+            <p className="text-2xl font-bold text-[#2D1B4E]">Nível {profile?.nivel || 1}</p>
+            <p className="text-xs text-[#6B5B7A]">Seu nível</p>
           </CardContent>
         </Card>
         
@@ -141,7 +141,7 @@ export default function PerfilPage() {
       <Card className="border-2 border-[#A66CFF]/30">
         <CardContent className="p-4">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-sm font-medium text-[#2D1B4E]">Progresso para Nivel {(profile?.nivel || 1) + 1}</span>
+            <span className="text-sm font-medium text-[#2D1B4E]">Progresso para Nível {(profile?.nivel || 1) + 1}</span>
             <span className="text-sm text-[#6B5B7A]">{xpProgress}/{XP_PER_LEVEL} XP</span>
           </div>
           <Progress value={xpPercentage} className="h-3 bg-[#A66CFF]/20" />
@@ -156,7 +156,7 @@ export default function PerfilPage() {
               {currentAvatar?.emoji}
             </div>
             <div>
-              <CardTitle className="text-xl text-[#2D1B4E]">{profile?.nome || 'Usuario'}</CardTitle>
+              <CardTitle className="text-xl text-[#2D1B4E]">{profile?.nome || 'Usuário'}</CardTitle>
               <CardDescription>{profile?.email}</CardDescription>
               {isPremium && (
                 <Badge className="mt-2 bg-gradient-to-r from-[#FFD93D] to-[#FF9F43] text-[#2D1B4E]">
@@ -212,7 +212,7 @@ export default function PerfilPage() {
                 Salvando...
               </>
             ) : (
-              'Salvar Alteracoes'
+              'Salvar Alterações'
             )}
           </Button>
         </CardContent>
@@ -253,7 +253,7 @@ export default function PerfilPage() {
             <div className="space-y-4">
               <div className="rounded-xl bg-[#FFF0F5] p-4 text-center">
                 <p className="text-[#6B5B7A]">
-                  Voce esta no plano gratuito. Assine o Premium para desbloquear todo o conteudo e ganhar mais estrelas!
+                  Você está no plano gratuito. Assine o Premium para desbloquear todo o conteúdo e ganhar mais estrelas!
                 </p>
               </div>
               <Button asChild className="w-full bg-gradient-to-r from-[#FFD93D] to-[#FF9F43] text-[#2D1B4E] hover:opacity-90">

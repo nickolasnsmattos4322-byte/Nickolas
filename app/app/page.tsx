@@ -55,16 +55,16 @@ const categories = [
     emoji: '📚'
   },
   { 
-    name: 'Numeros', 
+    name: 'Números', 
     href: '/app/matematica', 
     icon: Calculator, 
     color: 'from-[#4D96FF] to-[#A66CFF]',
     bgColor: 'bg-[#E8F0FF]',
-    description: 'Matematica divertida',
+    description: 'Matemática divertida',
     emoji: '🔢'
   },
   { 
-    name: 'Ingles', 
+    name: 'Inglês', 
     href: '/app/ingles', 
     icon: Globe, 
     color: 'from-[#FFD93D] to-[#FF9F43]',
@@ -85,7 +85,7 @@ const categories = [
 
 const quickActivities = [
   { name: 'Dinossauro', emoji: '🦖', color: 'bg-[#6BCB77]', href: '/app/colorir' },
-  { name: 'Unicornio', emoji: '🦄', color: 'bg-[#A66CFF]', href: '/app/colorir' },
+  { name: 'Unicórnio', emoji: '🦄', color: 'bg-[#A66CFF]', href: '/app/colorir' },
   { name: 'Borboleta', emoji: '🦋', color: 'bg-[#4D96FF]', href: '/app/colorir' },
   { name: 'Letra A', emoji: '🅰️', color: 'bg-[#FF6B9D]', href: '/app/alfabetizacao' },
 ]
@@ -136,12 +136,12 @@ export default async function AppDashboard() {
                 </h2>
               </div>
               <p className="text-white/90 text-lg mb-4">
-                Voce ja ganhou <span className="font-bold text-[#FFD93D]">{profile?.estrelas || 0} estrelas</span> esta semana!
+                Você já ganhou <span className="font-bold text-[#FFD93D]">{profile?.estrelas || 0} estrelas</span> esta semana!
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/20 backdrop-blur text-white">
                   <Trophy className="h-5 w-5 text-[#FFD93D]" />
-                  <span className="font-bold">Nivel {nivel}</span>
+                  <span className="font-bold">Nível {nivel}</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/20 backdrop-blur text-white">
                   <Star className="h-5 w-5 fill-[#FFD93D] text-[#FFD93D]" />
@@ -182,7 +182,7 @@ export default async function AppDashboard() {
       <section>
         <div className="mb-4 flex items-center gap-2">
           <Zap className="h-6 w-6 text-[#FFD93D]" />
-          <h3 className="text-xl font-bold text-foreground">Comecar Rapido</h3>
+          <h3 className="text-xl font-bold text-foreground">Começar Rápido</h3>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {quickActivities.map((activity) => (
@@ -273,13 +273,13 @@ export default async function AppDashboard() {
                 <Trophy className="h-8 w-8 text-white" />
               </div>
               <div>
-                <h4 className="font-bold text-lg text-foreground">Nivel {nivel}</h4>
-                <p className="text-muted-foreground">Continue assim para subir de nivel!</p>
+                <h4 className="font-bold text-lg text-foreground">Nível {nivel}</h4>
+                <p className="text-muted-foreground">Continue assim para subir de nível!</p>
               </div>
             </div>
             <div className="flex-1 max-w-md">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-sm text-muted-foreground">Progresso para nivel {nivel + 1}</span>
+                <span className="text-sm text-muted-foreground">Progresso para nível {nivel + 1}</span>
                 <span className="font-bold text-[#FF9F43]">{xpProgress}/{XP_PER_LEVEL} XP</span>
               </div>
               <Progress value={(xpProgress / XP_PER_LEVEL) * 100} className="h-4 bg-[#FFF8E1]" />
@@ -293,7 +293,7 @@ export default async function AppDashboard() {
         <div className="mb-6 flex items-center justify-between">
           <h3 className="text-xl font-bold text-foreground flex items-center gap-2">
             <Sparkles className="h-5 w-5 text-[#FF6B9D]" />
-            O que voce quer fazer?
+            O que você quer fazer?
           </h3>
         </div>
         <div className="grid gap-4 grid-cols-2 lg:grid-cols-3">

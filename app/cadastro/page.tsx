@@ -25,8 +25,8 @@ function GoogleIcon({ className }: { className?: string }) {
 
 const benefits = [
   { text: '500+ desenhos para colorir', emoji: '🎨' },
-  { text: 'Atividades de alfabetizacao', emoji: '📚' },
-  { text: 'Jogos de matematica', emoji: '🔢' },
+  { text: 'Atividades de alfabetização', emoji: '📚' },
+  { text: 'Jogos de matemática', emoji: '🔢' },
   { text: 'Ganhe estrelas e medalhas', emoji: '⭐' },
 ]
 
@@ -85,7 +85,7 @@ export default function SignUpPage() {
     if (error) {
       toast.error('Erro ao entrar com Google', {
         description: error.message === 'Provider not found' 
-          ? 'Login com Google nao esta configurado. Use email e senha.'
+          ? 'Login com Google não está configurado. Use email e senha.'
           : error.message,
       })
       setLoadingGoogle(false)
@@ -117,10 +117,10 @@ export default function SignUpPage() {
             </div>
           </Link>
           <CardTitle className="text-3xl font-extrabold bg-gradient-to-r from-[#6BCB77] to-[#1DD1A1] bg-clip-text text-transparent">
-            Comecar a Brincar!
+            Começar a Brincar!
           </CardTitle>
           <CardDescription className="text-base text-muted-foreground">
-            Crie sua conta gratis e comece a aprender
+            Crie sua conta grátis e comece a aprender
           </CardDescription>
         </CardHeader>
         <CardContent className="pt-4">
@@ -182,7 +182,7 @@ export default function SignUpPage() {
                 <Input
                   id="password"
                   type={showPassword ? 'text' : 'password'}
-                  placeholder="Minimo 6 caracteres"
+                  placeholder="Mínimo 6 caracteres"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
@@ -235,25 +235,25 @@ export default function SignUpPage() {
               ) : (
                 <>
                   <Play className="mr-2 h-5 w-5 fill-white" />
-                  Criar Conta Gratis
+                  Criar Conta Grátis
                 </>
               )}
             </Button>
           </form>
           
           <p className="mt-4 text-center text-xs text-muted-foreground">
-            Ao criar uma conta, voce concorda com nossos{' '}
+            Ao criar uma conta, você concorda com nossos{' '}
             <Link href="/termos" className="text-[#6BCB77] hover:underline font-medium">
               Termos de Uso
             </Link>{' '}
             e{' '}
             <Link href="/privacidade" className="text-[#6BCB77] hover:underline font-medium">
-              Politica de Privacidade
+              Política de Privacidade
             </Link>
           </p>
           
           <div className="mt-6 text-center text-base text-muted-foreground">
-            Ja tem uma conta?{' '}
+            Já tem uma conta?{' '}
             <Link href="/entrar" className="font-bold text-[#FF6B9D] hover:text-[#FF6B9D]/80 hover:underline">
               Entrar
             </Link>

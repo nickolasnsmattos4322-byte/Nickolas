@@ -28,9 +28,9 @@ const premiumBenefits = [
   { icon: Palette, text: 'Acesso ilimitado a todos os desenhos', color: 'from-[#FF6B9D] to-[#FF9F43]' },
   { icon: BookOpen, text: 'Todas as atividades educativas', color: 'from-[#6BCB77] to-[#1DD1A1]' },
   { icon: Download, text: 'Download de PDFs para imprimir', color: 'from-[#4D96FF] to-[#5F27CD]' },
-  { icon: Ban, text: 'Sem anuncios', color: 'from-[#FFD93D] to-[#FF9F43]' },
+  { icon: Ban, text: 'Sem anúncios', color: 'from-[#FFD93D] to-[#FF9F43]' },
   { icon: Star, text: 'Medalhas e conquistas exclusivas', color: 'from-[#A66CFF] to-[#FF6B9D]' },
-  { icon: Zap, text: 'Novos conteudos toda semana', color: 'from-[#FF4757] to-[#FF6B9D]' },
+  { icon: Zap, text: 'Novos conteúdos toda semana', color: 'from-[#FF4757] to-[#FF6B9D]' },
 ]
 
 export default function PremiumPage() {
@@ -78,7 +78,7 @@ export default function PremiumPage() {
           Seja <span className="bg-gradient-to-r from-[#FFD93D] to-[#FF9F43] bg-clip-text text-transparent">Premium</span>
         </h1>
         <p className="text-lg text-[#6B5B7A] max-w-md mx-auto">
-          Desbloqueie todo o conteudo e de o melhor para seu filho!
+          Desbloqueie todo o conteúdo e dê o melhor para seu filho!
         </p>
       </div>
 
@@ -168,7 +168,7 @@ export default function PremiumPage() {
                     </span>
                     <span className="text-[#6B5B7A]">/ano</span>
                     <p className="mt-2 text-sm text-[#6B5B7A] bg-[#6BCB77]/10 inline-block px-3 py-1 rounded-full">
-                      Apenas R$ {((premiumPlan.priceYearly / 100) / 12).toFixed(2).replace('.', ',')}/mes
+                      Apenas R$ {((premiumPlan.priceYearly / 100) / 12).toFixed(2).replace('.', ',')}/mês
                     </p>
                   </>
                 ) : (
@@ -176,7 +176,7 @@ export default function PremiumPage() {
                     <span className="text-5xl font-bold text-[#FF6B9D]">
                       R$ {(premiumPlan.priceMonthly / 100).toFixed(2).replace('.', ',')}
                     </span>
-                    <span className="text-[#6B5B7A]">/mes</span>
+                    <span className="text-[#6B5B7A]">/mês</span>
                   </>
                 )}
               </div>
@@ -242,7 +242,7 @@ export default function PremiumPage() {
         </div>
         <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
           <Star className="h-5 w-5 text-[#FFD93D]" />
-          <span className="text-sm font-medium text-[#2D1B4E]">+10.000 familias</span>
+          <span className="text-sm font-medium text-[#2D1B4E]">+10.000 famílias</span>
         </div>
         <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow">
           <Zap className="h-5 w-5 text-[#FF6B9D]" />
@@ -262,19 +262,19 @@ export default function PremiumPage() {
           <div className="p-4 bg-white rounded-2xl">
             <h4 className="font-bold text-[#2D1B4E]">Posso cancelar a qualquer momento?</h4>
             <p className="text-sm text-[#6B5B7A] mt-1">
-              Sim! Voce pode cancelar sua assinatura a qualquer momento. O acesso continua ate o fim do periodo pago.
+              Sim! Você pode cancelar sua assinatura a qualquer momento. O acesso continua até o fim do período pago.
             </p>
           </div>
           <div className="p-4 bg-white rounded-2xl">
             <h4 className="font-bold text-[#2D1B4E]">Como funciona o pagamento?</h4>
             <p className="text-sm text-[#6B5B7A] mt-1">
-              Aceitamos cartao de credito e PIX. O pagamento e processado de forma segura pelo Stripe.
+              Aceitamos cartão de crédito e PIX. O pagamento é processado de forma segura pelo Stripe.
             </p>
           </div>
           <div className="p-4 bg-white rounded-2xl">
             <h4 className="font-bold text-[#2D1B4E]">Tem garantia?</h4>
             <p className="text-sm text-[#6B5B7A] mt-1">
-              Sim! Oferecemos garantia de 7 dias. Se nao gostar, devolvemos seu dinheiro sem perguntas.
+              Sim! Oferecemos garantia de 7 dias. Se não gostar, devolvemos seu dinheiro sem perguntas.
             </p>
           </div>
         </CardContent>

@@ -56,7 +56,7 @@ export default async function ConquistasPage() {
   const typeLabels: Record<string, { label: string; icon: string; gradient: string; bg: string }> = {
     colorir: { label: 'Colorir', icon: '🎨', gradient: 'from-[#FF6B9D] to-[#A66CFF]', bg: 'bg-[#FFE4EC]' },
     atividade: { label: 'Atividades', icon: '📚', gradient: 'from-[#6BCB77] to-[#1DD1A1]', bg: 'bg-[#E8F8EA]' },
-    sequencia: { label: 'Sequencias', icon: '🔥', gradient: 'from-[#FF9F43] to-[#FFD93D]', bg: 'bg-[#FFF8E1]' },
+    sequencia: { label: 'Sequências', icon: '🔥', gradient: 'from-[#FF9F43] to-[#FFD93D]', bg: 'bg-[#FFF8E1]' },
     especial: { label: 'Especiais', icon: '⭐', gradient: 'from-[#4D96FF] to-[#A66CFF]', bg: 'bg-[#E8F0FF]' },
   }
 
@@ -70,7 +70,7 @@ export default async function ConquistasPage() {
               <Trophy className="h-8 w-8 text-white" />
             </div>
             <div>
-              <p className="text-sm text-muted-foreground">Nivel</p>
+              <p className="text-sm text-muted-foreground">Nível</p>
               <p className="text-3xl font-extrabold text-foreground">{nivel}</p>
               <div className="mt-1 w-24">
                 <Progress value={(xpProgress / XP_PER_LEVEL) * 100} className="h-2 bg-white/50" />

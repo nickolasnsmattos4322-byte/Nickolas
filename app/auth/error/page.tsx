@@ -15,23 +15,23 @@ function AuthErrorContent() {
   const errorMessages: Record<string, { title: string; description: string }> = {
     'access_denied': {
       title: 'Acesso Negado',
-      description: 'Voce cancelou o login ou nao autorizou o acesso. Tente novamente.',
+      description: 'Você cancelou o login ou não autorizou o acesso. Tente novamente.',
     },
     'server_error': {
       title: 'Erro no Servidor',
       description: 'Ocorreu um erro no servidor. Por favor, tente novamente mais tarde.',
     },
     'temporarily_unavailable': {
-      title: 'Servico Indisponivel',
-      description: 'O servico esta temporariamente indisponivel. Tente novamente em alguns minutos.',
+      title: 'Serviço Indisponível',
+      description: 'O serviço está temporariamente indisponível. Tente novamente em alguns minutos.',
     },
     'invalid_request': {
-      title: 'Solicitacao Invalida',
-      description: 'A solicitacao de autenticacao e invalida. Tente fazer login novamente.',
+      title: 'Solicitação Inválida',
+      description: 'A solicitação de autenticação é inválida. Tente fazer login novamente.',
     },
     'default': {
-      title: 'Erro na Autenticacao',
-      description: message || 'Houve um problema ao processar sua autenticacao. Por favor, tente novamente.',
+      title: 'Erro na Autenticação',
+      description: message || 'Houve um problema ao processar sua autenticação. Por favor, tente novamente.',
     },
   }
 

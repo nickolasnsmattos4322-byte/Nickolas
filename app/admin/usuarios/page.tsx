@@ -17,14 +17,14 @@ export default async function AdminUsuarios() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl font-bold">Usuarios</h1>
+      <h1 className="text-2xl font-bold">Usuários</h1>
 
       {/* Summary */}
       <div className="grid gap-4 md:grid-cols-3">
         <Card>
           <CardContent className="p-6">
             <div className="text-2xl font-bold">{users?.length || 0}</div>
-            <p className="text-sm text-muted-foreground">Total de Usuarios</p>
+            <p className="text-sm text-muted-foreground">Total de Usuários</p>
           </CardContent>
         </Card>
         <Card>
@@ -33,13 +33,13 @@ export default async function AdminUsuarios() {
               <Crown className="h-5 w-5 text-yellow-500" />
               <span className="text-2xl font-bold">{premiumCount}</span>
             </div>
-            <p className="text-sm text-muted-foreground">Usuarios Premium</p>
+            <p className="text-sm text-muted-foreground">Usuários Premium</p>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="p-6">
             <div className="text-2xl font-bold">{freeCount}</div>
-            <p className="text-sm text-muted-foreground">Usuarios Gratuitos</p>
+            <p className="text-sm text-muted-foreground">Usuários Gratuitos</p>
           </CardContent>
         </Card>
       </div>
@@ -47,7 +47,7 @@ export default async function AdminUsuarios() {
       {/* Users List */}
       <Card>
         <CardHeader>
-          <CardTitle>Todos os Usuarios</CardTitle>
+          <CardTitle>Todos os Usuários</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
@@ -91,7 +91,7 @@ export default async function AdminUsuarios() {
 
             {(!users || users.length === 0) && (
               <div className="py-12 text-center text-muted-foreground">
-                Nenhum usuario cadastrado ainda.
+                Nenhum usuário cadastrado ainda.
               </div>
             )}
           </div>

@@ -32,7 +32,7 @@ export default async function FavoritosPage() {
           </div>
           <div>
             <h1 className="text-2xl font-bold text-foreground">Favoritos</h1>
-            <p className="text-muted-foreground">Suas atividades favoritas em um so lugar!</p>
+            <p className="text-muted-foreground">Suas atividades favoritas em um só lugar!</p>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ export default async function FavoritosPage() {
           <Heart className="mx-auto h-12 w-12 text-muted-foreground/50" />
           <h3 className="mt-4 text-lg font-medium">Nenhum favorito ainda</h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            Clique no coracao nas atividades para adiciona-las aos favoritos!
+            Clique no coração nas atividades para adicioná-las aos favoritos!
           </p>
         </div>
       )}

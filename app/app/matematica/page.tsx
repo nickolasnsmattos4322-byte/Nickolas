@@ -45,10 +45,10 @@ export default async function MatematicaPage() {
           <Calculator className="h-10 w-10 text-white" />
         </div>
         <h1 className="text-4xl font-bold text-[#2D1B4E] mb-2">
-          Matematica
+          Matemática
         </h1>
         <p className="text-lg text-[#6B5B7A] max-w-xl mx-auto">
-          Numeros, contas e raciocinio logico de forma divertida!
+          Números, contas e raciocínio lógico de forma divertida!
         </p>
       </div>
 
@@ -56,17 +56,17 @@ export default async function MatematicaPage() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <Card className="p-4 bg-gradient-to-br from-[#4D96FF] to-[#5F27CD] text-white rounded-2xl hover:scale-105 transition-all cursor-pointer">
           <Hash className="h-8 w-8 mb-2" />
-          <h3 className="font-bold">Numeros</h3>
+          <h3 className="font-bold">Números</h3>
           <p className="text-sm text-white/80">1 a 100</p>
         </Card>
         <Card className="p-4 bg-gradient-to-br from-[#6BCB77] to-[#1DD1A1] text-white rounded-2xl hover:scale-105 transition-all cursor-pointer">
           <Plus className="h-8 w-8 mb-2" />
-          <h3 className="font-bold">Adicao</h3>
+          <h3 className="font-bold">Adição</h3>
           <p className="text-sm text-white/80">Somar</p>
         </Card>
         <Card className="p-4 bg-gradient-to-br from-[#FF6B9D] to-[#FF9F43] text-white rounded-2xl hover:scale-105 transition-all cursor-pointer">
           <Divide className="h-8 w-8 mb-2" />
-          <h3 className="font-bold">Subtracao</h3>
+          <h3 className="font-bold">Subtração</h3>
           <p className="text-sm text-white/80">Diminuir</p>
         </Card>
         <Card className="p-4 bg-gradient-to-br from-[#FFD93D] to-[#FF9F43] text-white rounded-2xl hover:scale-105 transition-all cursor-pointer">
@@ -114,7 +114,7 @@ export default async function MatematicaPage() {
               </div>
               <h3 className="text-xl font-bold text-[#2D1B4E] mb-2">Em breve!</h3>
               <p className="text-[#6B5B7A]">
-                Novas atividades de matematica chegando em breve!
+                Novas atividades de matemática chegando em breve!
               </p>
             </Card>
           )}
@@ -144,7 +144,7 @@ export default async function MatematicaPage() {
             Desbloqueie Todas as Atividades!
           </h3>
           <p className="text-white/90 mb-4 max-w-lg mx-auto">
-            Assine o plano Premium e tenha acesso a centenas de atividades de matematica!
+            Assine o plano Premium e tenha acesso a centenas de atividades de matemática!
           </p>
           <Button 
             asChild
